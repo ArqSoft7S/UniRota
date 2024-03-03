@@ -5,55 +5,74 @@
 </head>
 
 <body>
-        <h1>UniRota!!!</h1>
-        <p>O site para encontrar caronas</p>
+    <form class="register">
+        <div class="title">
+            <h1>UniRota!!!</h1>
+            <p>O seu site de caronas</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                </div>
 
-        <form id="register">
-            <div class="Email">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                <div class="input">
+                    <label class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="InputPassword">
+                </div>
+
+                <div class="input">
+                    <label class="form-label">Confirmar senha</label>
+                    <input type="password" class="form-control" id="InputPasswordConfirm">
+                </div>
+
+                <div class="input">
+                    <label class="form-label">Número de celular</label>
+                    <input type="Text" class="form-control" id="InputCellPhone">
+                </div>
+
+                <div class="input">
+                    <label class="form-label">CEP</label>
+                    <input type="Text" class="form-control" id="InputCep">
+                </div>
             </div>
-            <div class="Street">
-                <label for="exampleInputStreet" class="form-label">Rua</label>
-                <input type="Text" class="form-control" id="InputEmail1">
+
+            <div class="col-md-6">
+                <div class="input">
+                    <label class="form-label">Rua</label>
+                    <input type="Text" class="form-control" id="InputEmail1">
+                </div>
+
+                <div class="input">
+                    <label class="form-label">Número</label>
+                    <input type="number" class="form-control" id="InputNumber">
+                </div>
+
+                <div class="input">
+                    <label class="form-label">Cidade</label>
+                    <input type="Text" class="form-control" id="InputCity">
+                </div>
+
+                <div class="input">
+                    <label class="form-label">Complemento</label>
+                    <input type="Text" class="form-control" id="InputComplement">
+                </div>
+
+                <div class="input">
+                    <label class="form-label">Bairro</label>
+                    <input type="Text" class="form-control" id="InputNeighborhood">
+                </div>
             </div>
-            <div class="StreetNumber">
-                <label for="exampleInputStreetNumber" class="form-label">Número</label>
-                <input type="number" class="form-control" id="InputNumber">
-            </div>
-            <div class="City">
-                <label for="exampleInputCity" class="form-label">Cidade</label>
-                <input type="Text" class="form-control" id="InputCity">
-            </div>
-            <div class="CEP">
-                <label for="exampleInputCep" class="form-label">CEP</label>
-                <input type="Text" class="form-control" id="InputCep">
-            </div>
-            <div class="Complement">
-                <label for="exampleInputComplement" class="form-label">Complemento</label>
-                <input type="Text" class="form-control" id="InputComplement">
-            </div>
-            <div class="Neighborhood">
-                <label for="exampleInputNeighborhood" class="form-label">Bairro</label>
-                <input type="Text" class="form-control" id="InputNeighborhood">
-            </div>
-            <div class="CellPhone">
-                <label for="exampleInputCellPhone" class="form-label">Número de celular</label>
-                <input type="Text" class="form-control" id="InputCellPhone">
-            </div>
-            <div class="Password">
-                <label for="exampleInputPassword1" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="InputPassword">
-            </div>
-            <div class="PasswordConfirm">
-                <label for="exampleInputPassword1" class="form-label">Confirmar senha</label>
-                <input type="password" class="form-control" id="InputPasswordConfirm">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="Check">
-                <label class="form-check-label" for="exampleCheck1">Concordo com os termos</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
-        </form>
-    
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="Check">
+            <label class="form-check-label checkbox">Concordo com os termos de uso</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Cadastrar</button>
+        <a href="">Ja possui uma conta? Clique aqui para fazer login!</a>
+    </form>
+
+
 </body>
