@@ -2,6 +2,7 @@
     <title>UniRota</title>
     <link rel="stylesheet" href="~/css/register.css">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/reset.css"/>
 </head>
 
 <body>
@@ -71,7 +72,7 @@
             <label class="form-check-label checkbox">Concordo com os termos de uso</label>
         </div>
         <button type="submit" class="btn btn-primary btn-lg">Cadastrar</button>
-        <a href="">Ja possui uma conta? Clique aqui para fazer login!</a>
+        <a href="@Url.Action("Index", "Login")">Ja possui uma conta? Clique aqui para fazer login!</a>
     </form>
 
 
