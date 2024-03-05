@@ -1,0 +1,34 @@
+﻿<head>
+    <title>UniRota - Login</title>
+    <link rel="stylesheet" href="~/css/login.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/reset.css" />
+</head>
+
+<body>
+    <form class="login">
+        <div class="title">
+            <h1>UniRota!!!</h1>
+            <p>O seu site de caronas</p>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="input">
+                    <label for="email" class="form-label">Email
+                        <input type="email" class="form-control" id="email">
+                    </label>
+                </div>
+
+                <div class="input">
+                    <label for="password" class="form-label">Senha
+                    <input type="password" class="form-control" id="password">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Login</button>
+        <a href="@Url.Action("Index", "Register")">Ainda não possui uma conta? Clique aqui para fazer se cadastrar!</a>
+    </form>
+
+
+</body>
