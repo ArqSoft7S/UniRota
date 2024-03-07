@@ -1,12 +1,12 @@
 ﻿<head>
     <title>UniRota</title>
-    <link rel="stylesheet" href="~/css/register.css">
+    <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/reset.css"/>
+    <link rel="stylesheet" href="~/css/reset.css" />
 </head>
 
 <body>
-    <form class="register">
+    <form class="register" action="@Url.Action("RegistrarUsuario", "Register")" method="post">
         <div class="title">
             <h1>UniRota!!!</h1>
             <p>O seu site de caronas</p>
@@ -15,65 +15,63 @@
             <div class="col-md-6">
                 <div class="input">
                     <label class="form-label">Email</label>
-                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" name="InputEmail" required>
                 </div>
 
                 <div class="input">
                     <label class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="InputPassword">
+                    <input type="password" class="form-control" name="InputPassword" required>
                 </div>
 
                 <div class="input">
                     <label class="form-label">Confirmar senha</label>
-                    <input type="password" class="form-control" id="InputPasswordConfirm">
+                    <input type="password" class="form-control" name="InputPasswordConfirm" required>
                 </div>
 
                 <div class="input">
                     <label class="form-label">Número de celular</label>
-                    <input type="Text" class="form-control" id="InputCellPhone">
+                    <input type="Text" class="form-control" name="InputCellPhone" required>
                 </div>
 
                 <div class="input">
                     <label class="form-label">CEP</label>
-                    <input type="Text" class="form-control" id="InputCep">
+                    <input type="Text" class="form-control" name="InputCep" required>
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="input">
                     <label class="form-label">Rua</label>
-                    <input type="Text" class="form-control" id="InputEmail1">
+                    <input type="Text" class="form-control" name="InputRua" required>
                 </div>
 
                 <div class="input">
                     <label class="form-label">Número</label>
-                    <input type="number" class="form-control" id="InputNumber">
+                    <input type="number" class="form-control" name="InputNumber" required>
                 </div>
 
                 <div class="input">
                     <label class="form-label">Cidade</label>
-                    <input type="Text" class="form-control" id="InputCity">
+                    <input type="Text" class="form-control" name="InputCity" required>
                 </div>
 
                 <div class="input">
                     <label class="form-label">Complemento</label>
-                    <input type="Text" class="form-control" id="InputComplement">
+                    <input type="Text" class="form-control" name="InputComplement">
                 </div>
 
                 <div class="input">
                     <label class="form-label">Bairro</label>
-                    <input type="Text" class="form-control" id="InputNeighborhood">
+                    <input type="Text" class="form-control" name="InputNeighborhood" required>
                 </div>
             </div>
         </div>
 
         <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="Check">
+            <input type="checkbox" class="form-check-input" name="Check" value="true">
             <label class="form-check-label checkbox">Concordo com os termos de uso</label>
         </div>
-        <button type="submit" class="btn btn-primary btn-lg">Cadastrar</button>
+        <button class="btn btn-primary btn-lg" type="submit"> Cadastrar</button>
         <a href="@Url.Action("Index", "Login")">Ja possui uma conta? Clique aqui para fazer login!</a>
     </form>
-
-
 </body>
