@@ -1,6 +1,8 @@
 # ITEM 01 - Metodologia, Planejamento, Papéis, Feedbacks
 ## Papéis 
   - Todos os integrantes do grupo irão participar sugerindo novas funcionalidades e melhorias, seguindo a ideia de um product owner ou stakeholder. - Todos os integrantes do grupo irão atuar como desenvolvedores, para que todos possam adquirir conhecimento nas ferramentas utilizadas.
+PO: Natan Colleoni
+Desenvolvedores: José Miessi, Luana Alvares, Thiago Arcoverde
 ## Metodologia 
   - Para a primeira entrega realizada, não foi seguido nenhum processo. Os integrantes se reuniram nas aulas e ao longo da semana através do discord para desenvolvimento das telas entregues para atividade 01.- Metodologia utilizada para futuras entregas:
     * Abertura de Issues no Github referente às funcionalidades a serem desenvolvidas.
