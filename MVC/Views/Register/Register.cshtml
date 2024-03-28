@@ -1,6 +1,6 @@
 ﻿<head>
     <title>UniRota</title>
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="~/css/register.css">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/reset.css" />
 </head>
@@ -73,5 +73,9 @@
         </div>
         <button class="btn btn-primary btn-lg" type="submit"> Cadastrar</button>
         <a href="@Url.Action("Index", "Login")">Ja possui uma conta? Clique aqui para fazer login!</a>
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div style="color: crimson;">@ViewBag.ErrorMessage</div>
+        }
     </form>
 </body>
