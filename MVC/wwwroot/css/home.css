@@ -1,0 +1,180 @@
+﻿* {
+    font-family: "Inter", sans-serif;
+}
+
+.header {
+    height: 100px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.title {
+    font-weight:700;
+    font-size: 40px;
+    display: flex;
+}
+
+.title .span_01 {
+    color: #4400FF;
+}
+.title .span_02 {
+    color: #000000;
+}
+
+.title img {
+    width: auto;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container input[type="text"] {
+    width: 100%;
+    padding: 10px 20px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-size: 16px;
+    background: #E2E2E2;
+    color: #797979;
+    font-weight: 700;
+    height: 38px;
+}
+
+.input-container .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    height: 20px
+}
+
+.ride button img {
+    width: auto;
+    height: 15px;
+    margin-right: 7px;
+}
+
+.ride button {
+    padding: 8px 15px;
+    border: 2px solid #270094;
+    border-radius: 10px;
+    color: #270094;
+    height: 42px;
+}
+
+.ride button:hover {
+    background: #270094;
+    color: white;
+}
+
+.body {
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(68, 0, 255, 1), rgba(39, 0, 148, 0.8)),
+        url('../imgs/bg.jpg') no-repeat center center / cover;
+}
+
+.body .filters {
+    width: 100%;
+    height: 70px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+
+.body .filters .input-icon img {
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+}
+
+.body .filters .col > input {
+    width: 100%;
+    font-weight: 500;
+    color: rgba(121, 121, 121, 1);
+    font-size: 20px;
+}
+
+.search-button button{
+    width: 240px;
+    height: 70px;
+    background: rgba(0, 163, 255, 1);
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    padding: 25px 30px;
+    background: white;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.content .row .title-ride {
+    color: rgba(39, 0, 148, 1);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card-content {
+    width: 30% !important;
+    height: auto;
+}
+
+.card-content .card-image {
+    width: 100%;
+    object-fit: fill;
+}
+
+.card-content .card-image > img {
+    height: 149px;
+    width: 100%;
+    display: block;
+    border-top-left-radius: 10px;
+    object-fit: fill;
+    border-top-right-radius: 10px;
+}
+
+.card-content .card-description {
+    background: rgba(0, 163, 255, 1);
+    width: 100%;
+    color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-content .card-description p {
+    margin: 0 !important;
+}
+
+.card-content .card-description .university {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-content .card-description .location {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cards {
+    max-width: 1200px;
+    gap: 25px;
+    overflow-x:auto;
+}

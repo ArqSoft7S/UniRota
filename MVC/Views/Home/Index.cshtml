@@ -1,7 +1,111 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<head>
+    <title>UniRota</title>
+    <link rel="stylesheet" href="~/css/home.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/reset.css" />
+    
+    @* fonte *@
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-<div class="text-center">
-    <h1 class="display-4">Bem vindo ao UniRota</h1>
-</div>
+</head>
+
+
+<section class="header d-flex">
+    <div class="container d-flex">
+        <div class="title col-3 d-flex justify-content-center align-items-center">
+            <img src="~/imgs/icon-park_car.png" />
+            <div class="title">
+                <div class="span_01">Uni</div>
+                <div class="span_02">Rota</div>
+            </div>
+        </div>
+        <div class="search col-6 d-flex input-container justify-content-center align-items-center">
+            <input type="text" id="search" placeholder="Pesquise por caronas" />
+            <label for="search" class="d-flex search-icon">
+                <img src="~/imgs/gravity-ui_magnifier.png"/>
+            </label>
+        </div>
+        <div class="ride col-3 d-flex justify-content-center align-items-center">
+            <button class="d-flex justify-content-center align-items-center" type="button" href="#">
+                <img src="~/imgs/heart.png"/>
+                Oferecer carona
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="body">
+    <div class="container justify-content-center">
+        <div class="row filters">
+            <div class="col d-flex align-items-center">
+                <label for="search" class="d-flex input-icon">
+                    <img src="~/imgs/exit.png" />
+                </label>
+                <input type="text" id="search" placeholder="Local de saída" />
+            </div>
+            <div class="col d-flex align-items-center">
+                <label for="search" class="d-flex input-icon">
+                    <img src="~/imgs/check.png" />
+                </label>
+                <input type="text" id="search" placeholder="Local de chegada (faculdade)" />
+            </div>
+            <div class="col d-flex align-items-center">
+                <label for="search" class="d-flex input-icon">
+                    <img src="~/imgs/clock.png" />
+                </label>
+                <input type="text" id="search" placeholder="Horário" />
+            </div>
+        </div>
+        <div class="d-flex justify-content-center search-button">
+            <button class="d-flex justify-content-center align-items-center" type="button" href="#">
+                Procurar
+            </button>
+        </div>
+        
+        <div class="content">
+            <div class="row">
+                <p class="title-ride">Procure por caronas pelas faculdades mais próximas</p>
+            </div>
+            <div class="d-flex cards">
+                <div class="d-flex flex-column card-content">
+                    <div class="card-image">
+                        <img src="~/imgs/unicesumar.png"/>
+                    </div>
+                    <div class="card-description text-center">
+                        <p class="university">Unicesumar</p>
+                        <p class="location">Maringá - PR</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column card-content">
+                    <div class="card-image">
+                        <img src="~/imgs/uem.jpg" />
+                    </div>
+                    <div class="card-description text-center">
+                        <p class="university">UEM</p>
+                        <p class="location">Maringá - PR</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column card-content">
+                    <div class="card-image">
+                        <img src="~/imgs/fcv.png" />
+                    </div>
+                    <div class="card-description text-center">
+                        <p class="university">FCV</p>
+                        <p class="location">Maringá - PR</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column card-content">
+                    <div class="card-image">
+                        <img src="~/imgs/uninga.jpg" />
+                    </div>
+                    <div class="card-description text-center">
+                        <p class="university">Uningá</p>
+                        <p class="location">Maringá - PR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
