@@ -18,10 +18,11 @@ namespace MVC.Controllers
             return View("Login");
         }
 
+        [HttpPost]
         public IActionResult LogarUsuario(string InputEmail, string InputPassword)
         {
             var user = _context.Usuarios.Where(w => w.Email == InputEmail && w.Senha == InputPassword).FirstOrDefault();
-            if (user == null)
+            if (user is not null)
             {
                 return View("~/Views/Home/Index.cshtml");
             }
